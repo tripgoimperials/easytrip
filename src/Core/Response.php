@@ -1,8 +1,8 @@
 <?php 
 namespace App\Core;
 
-class Response{
-    public static funtion json(mixed $data,int $statusCode = 200) :never{
+final class Response{
+    public static funtion success(mixed $data,int $statusCode = 200) :never{
          http_response_code($statusCode);
 
          header("Content-Type:application/json");

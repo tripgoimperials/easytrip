@@ -1,0 +1,19 @@
+EASYTRIP DEMONSTRATION GUIDE
+
+1. Start Apache and MySQL in XAMPP.
+2. Open phpMyAdmin and create/import EasyTrip SQL scripts 00-09 in order.
+   If upgrading an existing EasyTrip database, also run 10 and 11 once.
+3. Open http://localhost/EasyTrip/
+4. Register a passenger and show the new row in phpMyAdmin > easytrip > users.
+5. Log in and show that the dashboard/profile displays the registered passenger's own data.
+6. Search a route/date and open a trip.
+7. Open seat selection. Explain that Fetch/AJAX calls api/seats.php every 4 seconds.
+8. Select a seat and continue. Explain server-side transaction + UNIQUE(trip_id, seat_id).
+9. Choose Card, USSD or Bank Transfer.
+10. First demonstrate a FAILED simulated payment. Show the failed row in the payments table.
+11. Then demonstrate a SUCCESSFUL simulated payment. Show booking status confirmed, payment success and ticket row in MySQL.
+12. Open confirmation and e-ticket.
+13. Open booking history and dashboard.
+14. Log in as admin and demonstrate passenger management.
+
+IMPORTANT: This is a simulated payment system. Do not enter real card information.
